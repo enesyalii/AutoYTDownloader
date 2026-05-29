@@ -1,0 +1,21 @@
+[project]
+name = "autoytdownload"
+version = "0.1.0"
+description = "Allows you to download media from Youtube without any fees or subscriptions"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "Pillow",
+    "yt-dlp",
+]
+
+[project.scripts]
+auto-yt-dl = "gui:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["gui"]
+include-package-data = true
